@@ -68,7 +68,23 @@ annotate RiskService.Risks with @(
 ) {
 
 };
-
+annotate RiskService.Risks with @(
+    UI: {
+        ...
+        ...
+        LineItem: [
+            ...
+            ...
+            {
+                Value: prio,
+                Criticality: criticality
+            },
+            {
+                Value: impact,
+                Criticality: criticality
+            }
+        ],
+        
 annotate RiskService.Risks with {
 	miti @(
 		Common: {
