@@ -65,9 +65,9 @@ resources:
 # ------------------------------------------------------------
    type: org.cloudfoundry.managed-service
    parameters:
-     service: xsuaa  
+     service: xsuaa
      service-plan: application
-     path: ./xs-security.json
+     path: ./xs-security.json  
      config:
        xsappname: cpapp-${space}    #  name + space dependency
        tenant-mode: dedicated
